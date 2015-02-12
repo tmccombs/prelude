@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: copyright line
+# key: copyright
+# binding: direct-keybinding
+# --
+Copyright (c) `(format-time-string "%Y" (current-time))` `(user-full-name)` <`user-mail-address`>

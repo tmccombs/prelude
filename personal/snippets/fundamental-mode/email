@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: user email
+# key: eml
+# binding: direct-keybinding
+# --
+`user-mail-address`
