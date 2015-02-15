@@ -35,6 +35,12 @@
 ;;; Slime setup
 (setq slime-contribs '(slime-fancy ))
 
+;;; Projectile customizations
+(defun projectile-direx ()
+  "Open Direx buffer in the project directory."
+  (interactive)
+  (direx:find-directory (projectile-project-root)))
+
 ;; Alter default modes
 (push '("\\.m$" . octave-mode) auto-mode-alist)
 
