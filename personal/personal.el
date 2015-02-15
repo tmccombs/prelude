@@ -5,6 +5,9 @@
 ;;;
 ;;; Code:
 
+;; Required packages:
+(prelude-require-packages '(evil yasnippet direx popwin))
+
 ;;; User customization
 (setq user-mail-address "astrothayne@gmail.com")
 
@@ -22,6 +25,7 @@
 (menu-bar-mode 1)
 
 ;;; YASnippet
+(require 'yasnippet)
 (setq yas-snippet-dirs '("~/.emacs.d/personal/snippets" yas-installed-snippets-dir))
 (add-hook 'yas-minor-mode-hook
           (lambda ()
