@@ -8,9 +8,6 @@
 ;; Required packages:
 (prelude-require-packages '(evil yasnippet direx popwin))
 
-;;; User customization
-(setq user-mail-address "astrothayne@gmail.com")
-
 ;;; Additional package archives
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
 
@@ -21,8 +18,6 @@
 
 ;;; Set some variables
 (global-linum-mode 1)
-(show-paren-mode 1)
-(menu-bar-mode 1)
 
 ;;; YASnippet
 (require 'yasnippet)
