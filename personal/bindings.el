@@ -22,7 +22,7 @@
 (define-key evil-insert-state-map [escape] 'evil-normal-state)
 (define-key evil-insert-state-map (kbd "s-n") 'evil-normal-state)
 ;; Still want to be able to switch to true emacs state
-(define-key evil-insert-state-map (kbd "s-e") 'evil-emacs-state)
+(define-key evil-insert-state-map (kbd evil-toggle-key) 'evil-emacs-state)
 
 ;;; Direx setup
 (require 'direx-project)
