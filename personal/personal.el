@@ -53,9 +53,9 @@
 (add-hook 'scala-mode-hook 'ensime-mode)
 
 ;; Alter default modes
-(push '("\\.m$" . octave-mode) auto-mode-alist)
-(add-to-list 'auto-mode-list '("\\.scala\\.html\\'" . web-mode))
-(add-to-list 'auto-mode-list '("\\.projectile\\'" . prog-mode))
+(add-to-list 'auto-mode-alist '("\\.m$" . octave-mode))
+(add-to-list 'auto-mode-alist '("\\.scala\\.html\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.projectile\\'" . prog-mode))
 
 (provide 'personal)
 ;;; personal.el ends here
