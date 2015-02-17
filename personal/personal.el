@@ -6,7 +6,7 @@
 ;;; Code:
 
 ;; Required packages:
-(prelude-require-packages '(evil yasnippet direx popwin))
+(prelude-require-packages '(evil yasnippet direx popwin perspective))
 
 ;;; Additional package archives
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
@@ -35,6 +35,9 @@
 (setq slime-contribs '(slime-fancy ))
 
 ;;; Projectile customization
+(projectile-global-mode)
+(persp-mode)
+(require 'persp-projectile)
 (defun projectile-direx ()
   "Open Direx buffer in the project directory."
   (interactive)
@@ -47,6 +50,8 @@
 
 ;; Alter default modes
 (push '("\\.m$" . octave-mode) auto-mode-alist)
+(add-to-list 'auto-mode-list '("\\.scala\\.html\\'" . web-mode))
+(add-to-list 'auto-mode-list '("\\.projectile\\'" . prog-mode))
 
 (provide 'personal)
 ;;; personal.el ends here
