@@ -29,5 +29,8 @@
 (define-key prog-mode-map (kbd "<f8>") 'direx:jump-to-directory-other-window)
 (global-set-key (kbd "M-<f8>") 'direx:find-directory-other-window)
 
+;;; Comment/Uncomment key binding
+(define-key prog-mode-map (kbd "C-%") 'comment-or-uncomment-region)
+
 
 ;;; window.el ends here
