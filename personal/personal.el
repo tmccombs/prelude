@@ -6,7 +6,7 @@
 ;;; Code:
 
 ;; Required packages:
-(prelude-require-packages '(evil yasnippet direx popwin perspective))
+(prelude-require-packages '(evil yasnippet direx popwin perspective ensime slime))
 
 ;;; Additional package archives
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
@@ -47,6 +47,10 @@
 (require 'popwin)
 (push '(direx:direx-mode :position left :width 25 :dedicated t)
       popwin:special-display-config)
+
+;;; Ensime setup
+(require 'ensime)
+(add-hook 'scala-mode-hook 'ensime-mode)
 
 ;; Alter default modes
 (push '("\\.m$" . octave-mode) auto-mode-alist)
