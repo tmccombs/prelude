@@ -52,6 +52,13 @@
 (require 'ensime)
 (add-hook 'scala-mode-hook 'ensime-mode)
 
+;;; Add clear method for comint mode
+(defun comint-clear ()
+  "Clear the buffer for comint mode."
+  (interactive)
+  (let ((comint-buffer-maximum-size 0))
+    (comint-truncate-buffer)))
+
 ;; Alter default modes
 (add-to-list 'auto-mode-alist '("\\.m$" . octave-mode))
 (add-to-list 'auto-mode-alist '("\\.scala\\.html\\'" . web-mode))
