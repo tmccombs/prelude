@@ -32,5 +32,5 @@
 ;;; Comment/Uncomment key binding
 (define-key prog-mode-map (kbd "C-%") 'comment-or-uncomment-region)
 
-
-;;; window.el ends here
+(provide 'thayne-bindings)
+;;; thayne-bindings.el ends here
