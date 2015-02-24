@@ -32,5 +32,8 @@
 ;;; Comment/Uncomment key binding
 (define-key prog-mode-map (kbd "C-%") 'comment-or-uncomment-region)
 
+;;; Add key binding for projectile-persp-mode.
+(global-set-key (kbd "C-c p <return>") 'projectile-persp-switch-project)
+
 (provide 'thayne-bindings)
 ;;; thayne-bindings.el ends here
