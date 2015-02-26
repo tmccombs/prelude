@@ -25,6 +25,10 @@
 (add-hook 'yas-minor-mode-hook
           (lambda ()
             (yas-activate-extra-mode 'fundamental-mode)))
+;; Turn off YASnippet in terminal modes so that
+;; tab-completion works.
+(add-hook 'term-mode-hook (lambda ()
+                            (yas-minor-mode -1)))
 
 ;; Fix doc-view
 (add-hook 'doc-view-mode-hook
