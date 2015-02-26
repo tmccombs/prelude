@@ -6,7 +6,7 @@
 ;;; Code:
 
 ;; Required packages:
-(prelude-require-packages '(evil yasnippet direx popwin perspective ensime slime))
+(prelude-require-packages '(evil yasnippet neotree popwin perspective ensime slime))
 
 ;;; Additional package archives
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
@@ -42,15 +42,8 @@
 (projectile-global-mode)
 (persp-mode)
 (require 'persp-projectile)
-(defun projectile-direx ()
-  "Open Direx buffer in the project directory."
-  (interactive)
-  (direx:find-directory (projectile-project-root)))
 
-;;; Make direx window open with popwin
-(require 'popwin)
-(push '(direx:direx-mode :position left :width 25 :dedicated t)
-      popwin:special-display-config)
+
 
 ;;; Ensime setup
 (require 'ensime)
