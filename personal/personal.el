@@ -31,10 +31,11 @@
                             (yas-minor-mode -1)))
 
 ;; Fix doc-view
-(add-hook 'doc-view-mode-hook
-          (lambda ()
-            (linum-mode -1)))
-
+(defun disable-linum-mode ()
+  "Turn off linum mode for the current buffer."
+  (linum-mode -1))
+(add-hook 'doc-view-mode-hook 'disable-linum-mode)
+(add-hook 'image-mode-hook 'disable-linum-mode)
 ;;; Slime setup
 (setq slime-contribs '(slime-fancy ))
 
