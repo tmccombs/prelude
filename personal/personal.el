@@ -59,7 +59,7 @@
 
 ;; Alter default modes
 (add-to-list 'auto-mode-alist '("\\.m$" . octave-mode))
-(add-to-list 'auto-mode-alist '("\\.scala\\.html\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.projectile\\'" . prog-mode))
 
 (provide 'personal)
