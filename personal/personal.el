@@ -44,7 +44,9 @@
 (persp-mode)
 (require 'persp-projectile)
 
-
+;;; Smartparen customization
+;; Don't pair "'" in some modes
+(sp-local-pair '(octave-mode minibuffer-inactive-mode) "'" nil :actions nil)
 
 ;;; Ensime setup
 (require 'ensime)
