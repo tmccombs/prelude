@@ -59,6 +59,10 @@
   (let ((comint-buffer-maximum-size 0))
     (comint-truncate-buffer)))
 
+;;; Enable horizontal scrolling with mouse
+(global-set-key (kbd "<mouse-6>") 'scroll-right)
+(global-set-key (kbd "<mouse-7>") 'scroll-left)
+
 ;; Alter default modes
 (add-to-list 'auto-mode-alist '("\\.m$" . octave-mode))
 (add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode))
