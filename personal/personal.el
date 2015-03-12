@@ -61,8 +61,12 @@
     (comint-truncate-buffer)))
 
 ;;; Enable horizontal scrolling with mouse
-(global-set-key (kbd "<mouse-6>") 'scroll-right)
-(global-set-key (kbd "<mouse-7>") 'scroll-left)
+(global-set-key (kbd "<mouse-6>") (lambda ()
+                                    (interactive)
+                                    (scroll-right 5 t)))
+(global-set-key (kbd "<mouse-7>") (lambda ()
+                                    (interactive)
+                                    (scroll-left 5 t)))
 
 ;; Alter default modes
 (add-to-list 'auto-mode-alist '("\\.m$" . octave-mode))
