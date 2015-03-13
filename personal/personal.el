@@ -43,7 +43,6 @@
 (projectile-global-mode)
 (persp-mode)
 (require 'persp-projectile)
-(add-to-list 'persp-switch-hook 'neotree-projectile-action)
 
 ;;; Smartparen customization
 ;; Don't pair "'" in some modes

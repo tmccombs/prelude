@@ -24,9 +24,12 @@
 ;; Still want to be able to switch to true emacs state
 (define-key evil-insert-state-map (kbd evil-toggle-key) 'evil-emacs-state)
 
-;;; Direx setup
+;;; Neotree setup
 (require 'neotree)
+(require 'projectile)
 (global-set-key [f8] 'neotree-toggle)
+;; Add keybinding for opening neotree for the project.
+(define-key projectile-command-map (kbd "n") 'neotree-projectile-action)
 
 ;;; Comment/Uncomment key binding
 (define-key prog-mode-map (kbd "C-%") 'comment-or-uncomment-region)
