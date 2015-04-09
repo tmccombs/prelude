@@ -31,6 +31,8 @@
 ;; Add keybinding for opening neotree for the project.
 (define-key projectile-command-map (kbd "n") 'neotree-projectile-action)
 
+(define-key sp-keymap (kbd "M-K") 'sp-kill-sexp)
+
 ;;; Comment/Uncomment key binding
 (define-key prog-mode-map (kbd "C-%") 'comment-or-uncomment-region)
 
