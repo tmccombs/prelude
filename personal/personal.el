@@ -32,8 +32,6 @@
   (linum-mode -1))
 (add-hook 'doc-view-mode-hook 'disable-linum-mode)
 (add-hook 'image-mode-hook 'disable-linum-mode)
-;;; Slime setup
-(setq slime-contribs '(slime-fancy ))
 
 ;;; Projectile customization
 (projectile-global-mode)
