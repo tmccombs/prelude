@@ -9,6 +9,7 @@
 (prelude-require-packages '(evil yasnippet neotree popwin perspective ensime slime))
 
 ;;; Additional package archives
+(add-to-list 'package-archives '("melpa-stable" . "http://stable.melpa.org/packages/"))
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
 
 
