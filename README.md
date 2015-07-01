@@ -70,7 +70,7 @@ can skip the whole manual and just type in your favorite shell the
 following command:
 
 ```bash
-curl -L http://git.io/epre | sh
+curl -L https://git.io/epre | sh
 ```
 
 You can now power up your Emacs, sit back and enjoy Prelude,
@@ -498,6 +498,13 @@ Or you can use another theme altogether by adding something in `personal/preload
 **P.S.** Solarized is not available by default - you'll have to
   install it from MELPA first (`M-x package-install RET
   solarized-theme`).
+
+Finally, if you don't want any theme at all, you can add this to your
+`personal/preload`:
+
+```lisp
+(setq prelude-theme nil)
+```
 
 ### Personalizing
 
