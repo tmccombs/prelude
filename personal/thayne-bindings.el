@@ -39,5 +39,14 @@
 ;;; Add key binding for projectile-persp-mode.
 (global-set-key (kbd "C-c p <return>") 'projectile-persp-switch-project)
 
+;;; Enable horizontal scrolling with mouse
+(global-set-key (kbd "<mouse-6>") (lambda ()
+                                    (interactive)
+                                    (scroll-right 5 t)))
+(global-set-key (kbd "<mouse-7>") (lambda ()
+                                    (interactive)
+                                    (scroll-left 5 t)))
+
+
 (provide 'thayne-bindings)
 ;;; thayne-bindings.el ends here
