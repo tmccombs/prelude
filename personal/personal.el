@@ -15,7 +15,6 @@
 
 ;;; Set some variables
 (global-linum-mode 1)
-(setq magit-last-seen-setup-instructions "1.4.0")
 
 ;;; YASnippet
 (require 'yasnippet)
