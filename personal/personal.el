@@ -12,6 +12,9 @@
 (add-to-list 'package-archives '("melpa-stable" . "http://stable.melpa.org/packages/"))
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
 
+;; fallback for all fonts
+(set-fontset-font "fontset-default" nil
+                  (font-spec :name "Symbola"))
 
 ;;; Set some variables
 (global-linum-mode 1)
