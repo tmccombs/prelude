@@ -47,6 +47,9 @@
                                     (interactive)
                                     (scroll-left 5 t)))
 
+(require 'magit)
+(define-key magit-file-section-map "K" 'magit-discard)
+
 
 (provide 'thayne-bindings)
 ;;; thayne-bindings.el ends here
