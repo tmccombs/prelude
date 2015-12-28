@@ -1,6 +1,0 @@
-# -*- mode: snippet; require-final-newline: nil -*-
-# name: filename
-# key: filename
-# binding: direct-keybinding
-# --
-`(file-name-nondirectory buffer-file-name)`

@@ -6,7 +6,7 @@
 ;;; Code:
 
 ;; Required packages:
-(prelude-require-packages '(evil yasnippet neotree popwin perspective ensime slime))
+(prelude-require-packages '(evil neotree popwin perspective ensime slime))
 
 ;;; Additional package archives
 (add-to-list 'package-archives '("melpa-stable" . "http://stable.melpa.org/packages/"))
@@ -18,17 +18,6 @@
 
 ;;; Set some variables
 (global-linum-mode 1)
-
-;;; YASnippet
-(require 'yasnippet)
-(setq yas-snippet-dirs '("~/.emacs.d/personal/snippets" yas-installed-snippets-dir))
-(add-hook 'yas-minor-mode-hook
-          (lambda ()
-            (yas-activate-extra-mode 'fundamental-mode)))
-;; Turn off YASnippet in terminal modes so that
-;; tab-completion works.
-(add-hook 'term-mode-hook (lambda ()
-                            (yas-minor-mode -1)))
 
 ;; Fix doc-view
 (defun disable-linum-mode ()
