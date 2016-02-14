@@ -46,6 +46,8 @@
   (let ((comint-buffer-maximum-size 0))
     (comint-truncate-buffer)))
 
+;;; Spelling
+(push "--run-together" ispell-extra-args)
 
 ;; Alter default modes
 (add-to-list 'auto-mode-alist '("\\.m$" . octave-mode))
