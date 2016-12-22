@@ -6,7 +6,8 @@
 ;;; Code:
 
 ;; Required packages:
-(prelude-require-packages '(evil neotree popwin perspective ensime slime))
+(prelude-require-packages '(evil neotree popwin perspective ensime slime
+                                 enh-ruby-mode))
 
 ;;; Additional package archives
 (add-to-list 'package-archives '("melpa-stable" . "http://stable.melpa.org/packages/"))
@@ -53,6 +54,7 @@
 (add-to-list 'auto-mode-alist '("\\.m$" . octave-mode))
 (add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.projectile\\'" . prog-mode))
+(add-to-list 'auto-mode-alist '("\\.rb" . enh-ruby-mode))
 
 (provide 'personal)
 ;;; personal.el ends here
